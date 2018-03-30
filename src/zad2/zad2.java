@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 public class zad2 {
 	
 	public static void main(String[] args) {
@@ -32,11 +34,13 @@ public class zad2 {
 			System.out.println("Enter number: ");
 			int number =Integer.parseInt(scan.next());
 			
-			while(Arrays.asList(userArr).contains(number)) {
+			while(ArrayUtils.contains(userArr, number)) {
 				System.out.println("Number already chosen. Enter other number: ");
 				number =Integer.parseInt(scan.next());
 			}
-			userArr[i]=number;
+			
+			userArr[i] = number;
+
 		}
 		
 		Arrays.sort(userArr);
@@ -54,13 +58,9 @@ public class zad2 {
 		}
 		
 		if (counter >= 3) {
-			
 			System.out.println("You win! (3 or more numbers eqals lotto draw)");
-			
 		}
-
 	}
-	
 }
 
 
