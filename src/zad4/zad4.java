@@ -1,7 +1,5 @@
 package zad4;
 
-import java.util.Arrays;
-import java.util.StringTokenizer;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class zad4 {
