@@ -33,6 +33,7 @@ public class zad1 {
 		
 		}
 		
+		scan.close();
 		System.out.println("Koniec");
 
 	}
